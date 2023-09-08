@@ -4,6 +4,7 @@
         <title> Portfolio </title>
         <link rel="stylesheet" href="index.css">
         <link rel="icon" type="image/x-icon" href="/images/JJ_Logocyan.ico">
+        <script src="javascript.js"></script>
     </head>
     <body>
         <nav class="navigation">
@@ -51,7 +52,29 @@
         </div>
         <div class="contact">
             <h1> Contact me </h1>
-            <p> contact form here </p>
+            <form action="https://formspree.io/f/mjvqrzez" method="POST">
+                <div class="message-icon">
+                    <i class="telegram"></i>
+                    <span> Message </span>
+                </div>
+                <div id="input-field">
+                    <i class="person"></i>
+                    <input type="text" placeholder="Name" name="Name">
+                </div>
+                <div id="input-field">
+                    <i class="telephone"></i>
+                    <input type="text" placeholder="Phone Number" name="Phone">
+                </div>
+                <div id="input-field">
+                    <i class="envelope"></i>
+                    <input type="text" placeholder="Email Address" name="Email">
+                </div>
+                <div id="input-field">
+                    <i class="chat"></i>
+                    <textarea type="Message" placeholder="Message" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="send-btn">
+            </form>
         </div>
     </body>
 </html>
